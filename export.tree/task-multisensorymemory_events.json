@@ -1,0 +1,23 @@
+{
+  "onset": {
+    "Description": "Onset of the event, relative to the first volume of the run.",
+    "Units": "s"
+  },
+  "duration": {
+    "Description": "Duration of the event.",
+    "Units": "s"
+  },
+  "trial_type": {
+    "Description": "Trial condition.",
+    "Levels": {
+      "congruent": "Audiovisual clip in which the auditory and visual streams come from the same event.",
+      "incongruent": "Audiovisual clip in which the auditory and visual streams come from different events.",
+      "auditory": "Auditory-only clip.",
+      "visual": "Visual-only clip.",
+      "iti": "Inter-trial interval; no stimulus presented."
+    }
+  },
+  "stim_path": {
+    "Description": "Path of the stimulus file presented on this trial, relative to the stimulus set. n/a for inter-trial intervals."
+  }
+}
