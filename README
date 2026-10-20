@@ -39,7 +39,7 @@ Siemens MAGNETOM Prisma 3T (syngo MR XA30), 64-channel head/neck coil.
 
 ## Raw data
 
-Standard BIDS layout under `sub-<label>/`:
+BIDS layout under `sub-<label>/`:
 
   anat/   T1w, T2w
   func/   9 BOLD runs, with events.tsv and events.json
