@@ -1,0 +1,29 @@
+{
+    "Name": "The human hippocampus supports auditory coding and multisensory integration",
+    "BIDSVersion": "1.9.0",
+    "DatasetType": "raw",
+    "License": "CC0",
+    "Authors": [
+        "Omri Raccah",
+        "Aryan Agarwal",
+        "Yannan Zhu",
+        "Nicholas B. Turk-Browne"
+    ],
+    "Acknowledgements": "We thank Roeland Hancock, Alexander Forrence, Irene Zhou, Erica Busch, Lillian Behm, and Juliana Trach for help with data collection. Data were collected at BrainWorks (RRID:SCR_024556), Center for Neurocognition and Behavior, Wu Tsai Institute, Yale University.",
+    "Funding": [
+        "NIH/NEI F32 EY035941 (O.R.)",
+        "NIH R01 MH069456 (N.B.T-B.)",
+        "Canadian Institute for Advanced Research (N.B.T-B.)"
+    ],
+    "EthicsApprovals": [
+        "Yale University Institutional Review Board, protocol 2000022976"
+    ],
+    "ReferencesAndLinks": [
+        "https://doi.org/10.17605/OSF.IO/JCG8A",
+        "https://github.com/omriraccah/multimem_fMRI_expt",
+        "https://github.com/omriraccah/multimem_fMRI_analysis",
+        "https://doi.org/10.64898/2026.03.01.708855"
+    ],
+    "HowToAcknowledge": "Please cite Raccah, O., Agarwal, A., Zhu, Y., & Turk-Browne, N. B. The human hippocampus supports auditory coding and multisensory integration. PLOS Biology (2026).",
+    "DatasetDOI": "doi:10.18112/openneuro.ds008849.v1.0.0"
+}
