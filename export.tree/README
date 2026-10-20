@@ -1,0 +1,81 @@
+# The human hippocampus supports auditory coding and multisensory integration
+
+This dataset contains raw and preprocessed 3T fMRI data from
+32 healthy adults which accompany:
+
+  Raccah, O., Agarwal, A., Zhu, Y., & Turk-Browne, N. B. (2026). The human
+  hippocampus supports auditory coding and multisensory integration.
+  PLOS Biology.
+
+## Participants
+
+32 participants (sub-mm01 through sub-mm32). `participants.tsv` includes
+each participant, with an `included` flag and an `exclusion_reason`. Two
+participants (sub-mm04, sub-mm12) were excluded from all analyses reported
+in the paper for excessive head motion. Their data are included here in
+full.
+
+## Task
+
+Each participant completed 9 runs of the task.
+
+Each run's `events.tsv` contains:
+
+  onset       run-relative onset in seconds
+  duration    event duration in seconds
+  trial_type  trial condition label
+  stim_path   partial path of the stimulus file presented on that trial
+
+## Acquisition
+
+Siemens MAGNETOM Prisma 3T (syngo MR XA30), 64-channel head/neck coil.
+
+  T1w   208 x 256 x 256, 1.0 mm isotropic, whole head
+  T2w   384 x 384 x 54, 0.438 x 0.438 x 1.8 mm, oblique coronal slab
+	perpendicular to the hippocampal long axis.
+  BOLD  9 runs, TR = 1.5 s, TE = 32 ms, flip angle = 64 deg,
+        multiband factor 6
+  fmap  reverse-phase-encode spin-echo EPI (dir-AP and dir-PA)
+
+## Raw data
+
+BIDS layout under `sub-<label>/`:
+
+  anat/   T1w, T2w
+  func/   9 BOLD runs, with events.tsv and events.json
+  fmap/   dir-AP and dir-PA
+
+## Derivatives
+
+### derivatives/fmriprep/
+
+Preprocessed anatomical and functional data using fMRIPrep
+23.2.1. Two output spaces provided:
+
+  T1w                      participant native space
+  MNI152NLin2009cAsym      volumetric template space
+
+Also included per participant: preprocessed T2w, brain and ribbon
+masks, tissue probability maps and discrete segmentation, cortical
+surfaces, the transforms between spaces, preprocessed BOLD, and run-level confound
+timeseries.
+
+### derivatives/rois/
+
+ROIs masks used in the paper:
+
+  ASHS/bin_masks_5B_T1/    hippocampal subfield masks in T1 space
+  ASHS/bin_masks_5B_T2/    hippocampal subfield masks in T2 space
+
+  harvard-oxford/          Harvard-Oxford atlas:
+                             Heschl's Gyrus (includes H1 and H2)
+                             Superior Temporal Gyrus, posterior division
+                             Lateral Occipital Cortex, inferior division
+                             Occipital Pole
+
+  antpost-segs/            anterior and posterior hippocampal divisions:
+			     left, right, and combined
+
+## Contact
+
+Omri Raccah - omri.raccah@yale.edu
