@@ -1,13 +1,2 @@
-1.0.0 2026-09-13
-
- - Initial public release accompanying Raccah, Agarwal, Zhu & Turk-Browne,
-   "The human hippocampus supports auditory coding and multisensory integration",
-   PLOS Biology (2026).
- - Raw BIDS data for 32 participants: T1w, T2w, nine functional runs, fieldmaps,
-   and trial-level events.
- - Derivatives: fMRIPrep 23.2.1 (native T1w and MNI152NLin2009cAsym),
-   FreeSurfer 7.3.2, ASHS hippocampal subfield segmentations, manual
-   anterior/posterior hippocampal masks, Harvard-Oxford cortical ROIs.
- - T1w images defaced with pydeface, including all whole-head anatomical
-   volumes in derivatives. T2w is a limited-coverage oblique slab containing no
-   facial features and is released unmodified.
+1.0.0 2026-10-20
+  - Full dataset in BIDS
