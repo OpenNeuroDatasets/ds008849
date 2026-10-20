@@ -1,0 +1,10 @@
+{
+  "Name": "Regions of interest",
+  "BIDSVersion": "1.9.0",
+  "DatasetType": "derivative",
+  "GeneratedBy": [
+    {"Name": "ASHS", "Description": "Hippocampal subfield segmentation, 5B atlas; combined_*_mask_T1/T2, binarized and non-binarized"},
+    {"Name": "FSL Harvard-Oxford", "Description": "Cortical atlas ROIs warped to native T1w space"},
+    {"Name": "Custom", "Description": "Anterior/posterior hippocampal divisions (_rd_q)"}
+  ]
+}
